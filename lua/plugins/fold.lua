@@ -23,10 +23,8 @@ return {
     config = true,
   },
   {
-    "ederlmartins/nvim-origami",
-    event = "BufReadPost",
-    config = function()
-      require("origami").setup({})
-    end,
+    "chrisgrieser/nvim-origami",
+    event = "VeryLazy",
+    opts = {}, -- needed even when using default config
   },
 }
